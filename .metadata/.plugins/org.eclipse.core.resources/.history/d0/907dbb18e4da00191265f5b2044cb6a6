@@ -1,0 +1,73 @@
+package model;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity(name = "TRANSACTION_TBL")
+public class TransactionEntity {
+
+	@Id
+	@GeneratedValue( strategy=GenerationType.AUTO)
+	private long  id;
+	
+	private String customerName;
+	private String sourcePassport;
+	private String destinationPassport;
+	private String destinationBank;
+	private String destinationCountryt;
+	private int accountNumber;
+	private double amount;
+	
+	
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public String getSourcePassport() {
+		return sourcePassport;
+	}
+	public void setSourcePassport(String sourcePassport) {
+		this.sourcePassport = sourcePassport;
+	}
+	public String getDestinationPassport() {
+		return destinationPassport;
+	}
+	public void setDestinationPassport(String destinationPassport) {
+		this.destinationPassport = destinationPassport;
+	}
+	public String getDestinationBank() {
+		return destinationBank;
+	}
+	public void setDestinationBank(String destinationBank) {
+		this.destinationBank = destinationBank;
+	}
+	public String getDestinationCountryt() {
+		return destinationCountryt;
+	}
+	public void setDestinationCountryt(String destinationCountryt) {
+		this.destinationCountryt = destinationCountryt;
+	}
+	public int getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(int accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public double getAmount() {
+		return amount;
+	}
+	public void setAmount(double amount) {
+		this.amount = amount;
+	}
+	
+}

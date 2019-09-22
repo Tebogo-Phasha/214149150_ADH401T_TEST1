@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+<h:head>
+	<title>DigiBank</title>
+</h:head>
+<h:body>
+	<h2>Please Capture Transactions Below</h2>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Name : " />
+			<h:inputText value="#{transactioncontroller.transaction.customerName}"></h:inputText>
+			<h:outputLabel value="Source Passport : " />
+			<h:inputText value="#{transactioncontroller.transaction.sourcePassport}"></h:inputText>
+						<h:outputLabel value="Destination Passport : " />
+			<h:inputText value="#{transactioncontroller.transaction.destinationPassport}"></h:inputText>
+			<h:outputLabel value="Destination Bank : " />
+			<h:inputText value="#{transactioncontroller.transaction.destinationBank}"></h:inputText>
+
+			<h:outputLabel value="Destination Country : " />
+			<h:selectOneMenu value="#{transactioncontroller.transaction.destinationCountryt}">
+				<f:selectItem itemValue="Afghanistan" itemLabel="Afghanistan" />
+				<f:selectItem itemValue=" Åland Islands" itemLabel=" Åland Islands" />
+				<f:selectItem itemValue="Albania" itemLabel="Albania" />
+				<f:selectItem itemValue="Algeria" itemLabel="Algeria" />
+				<f:selectItem itemValue=" American Samoa" itemLabel=" American Samoa" />
+				<f:selectItem itemValue="Andorra" itemLabel="Andorra" />
+				<f:selectItem itemValue="Angola" itemLabel="Angola" />
+				<f:selectItem itemValue="Anguilla" itemLabel="Anguilla" />
+				<f:selectItem itemValue="Antarctica" itemLabel="Antarctica" />
+				<f:selectItem itemValue="Antigua and Barbuda" itemLabel="Antigua and Barbuda" />
+				<f:selectItem itemValue="Argentina" itemLabel="Argentina" />
+				<f:selectItem itemValue="Australia" itemLabel="Australia" />
+				<f:selectItem itemValue="Austria" itemLabel="Austria" />
+				<f:selectItem itemValue="Bangladesh" itemLabel="Bangladesh" />
+				<f:selectItem itemValue="Belgium" itemLabel="Belgium" />
+				<f:selectItem itemValue="Bolivia" itemLabel="Bolivia" />
+				<f:selectItem itemValue="Botswana" itemLabel="Botswana" />
+				<f:selectItem itemValue="Brazil" itemLabel="Brazil" />
+				<f:selectItem itemValue="Burkina Faso" itemLabel="Burkina Faso" />
+				<f:selectItem itemValue="Burundi" itemLabel="Burundi" />
+				<f:selectItem itemValue="Cameroon" itemLabel="Cameroon" />
+				<f:selectItem itemValue="Canada" itemLabel="Canada" />
+				<f:selectItem itemValue="Cape Verde" itemLabel="Cape Verde" />
+				<f:selectItem itemValue="Central African Republic" itemLabel="Central African Republic" />
+				<f:selectItem itemValue="Chile" itemLabel="Chile" />
+				<f:selectItem itemValue="China" itemLabel="China" />
+				<f:selectItem itemValue="Colombia" itemLabel="Colombia" />
+				<f:selectItem itemValue="Congo" itemLabel="Congo" />
+				<f:selectItem itemValue="Costa Rica" itemLabel="Costa Rica" />
+				<f:selectItem itemValue="Cote D'ivoire" itemLabel="Cote D'ivoire" />
+				<f:selectItem itemValue="Croatia" itemLabel="Croatia" />
+				<f:selectItem itemValue="Cuba" itemLabel="Cuba" />
+				<f:selectItem itemValue="Czech Republic" itemLabel="Czech Republic" />
+				<f:selectItem itemValue="Denmark" itemLabel="Denmark" />
+				<f:selectItem itemValue="Egypt" itemLabel="Egypt" />
+				<f:selectItem itemValue="Equatorial Guinea" itemLabel="Equatorial Guinea" />
+				<f:selectItem itemValue="Ethiopia" itemLabel="Ethiopia" />
+				<f:selectItem itemValue="Fiji" itemLabel="Fiji" />
+				<f:selectItem itemValue="Finland" itemLabel="Finland" />
+				<f:selectItem itemValue="France" itemLabel="France" />
+				<f:selectItem itemValue="Gabon" itemLabel="Gabon" />
+				<f:selectItem itemValue="Georgia" itemLabel="Georgia" />
+				<f:selectItem itemValue="Germany" itemLabel="Germany" />
+				<f:selectItem itemValue="Ghana" itemLabel="Ghana" />
+				<f:selectItem itemValue="Greece" itemLabel="Greece" />
+				<f:selectItem itemValue="Hong Kong" itemLabel="Hong Kong" />
+				<f:selectItem itemValue="Hungary" itemLabel="Hungary" />
+				<f:selectItem itemValue="Iceland" itemLabel="Iceland" />
+				<f:selectItem itemValue="India" itemLabel="India" />
+				<f:selectItem itemValue="Indonesia" itemLabel="Indonesia" />
+				<f:selectItem itemValue="Iraq" itemLabel="Iraq" />
+				<f:selectItem itemValue="Italy" itemLabel="Italy" />
+				<f:selectItem itemValue="Jamaica" itemLabel="Jamaica" />
+				<f:selectItem itemValue="Japan" itemLabel="Japan" />
+				<f:selectItem itemValue="Kenya" itemLabel="Kenya" />
+				<f:selectItem itemValue="Lesotho" itemLabel="Lesotho" />
+				<f:selectItem itemValue="Liberia" itemLabel="Liberia" />
+				<f:selectItem itemValue="Malawi" itemLabel="Malawi" />
+				<f:selectItem itemValue="Malaysia" itemLabel="Malaysia" />
+				<f:selectItem itemValue="Mali" itemLabel="Mali" />
+				<f:selectItem itemValue="Mauritius" itemLabel="Mauritius" />
+				<f:selectItem itemValue="Mexico" itemLabel="Mexico" />
+				<f:selectItem itemValue="Monaco" itemLabel="Monaco" />
+				<f:selectItem itemValue="Morocco" itemLabel="Morocco" />
+				<f:selectItem itemValue="Mozambique" itemLabel="Mozambique" />
+				<f:selectItem itemValue="Namibia" itemLabel="Namibia" />
+				<f:selectItem itemValue="Netherlands" itemLabel="Netherlands" />
+				<f:selectItem itemValue="New Zealand" itemLabel="New Zealand" />
+				<f:selectItem itemValue="Nigeria" itemLabel="Nigeria" />
+				<f:selectItem itemValue="Pakistan" itemLabel="Pakistan" />
+				<f:selectItem itemValue="Panama" itemLabel="Panama" />
+				<f:selectItem itemValue="Paraguay" itemLabel="Paraguay" />
+				<f:selectItem itemValue="Peru" itemLabel="Peru" />
+				<f:selectItem itemValue="Poland" itemLabel="Poland" />
+				<f:selectItem itemValue="Portugal" itemLabel="Portugal" />
+				<f:selectItem itemValue="Russian" itemLabel="Russian" />
+				<f:selectItem itemValue="Rwanda" itemLabel="Rwanda" />
+				<f:selectItem itemValue="Saudi Arabia" itemLabel="Saudi Arabia" />
+				<f:selectItem itemValue="Senegal" itemLabel="Senegal" />
+				<f:selectItem itemValue="Serbia" itemLabel="Serbia" />
+				<f:selectItem itemValue="Seychelles" itemLabel="Seychelles" />
+				<f:selectItem itemValue="Somalia" itemLabel="Somalia" />
+				<f:selectItem itemValue="South Africa" itemLabel="South Africa" />
+				<f:selectItem itemValue="Spain" itemLabel="Spain" />
+				<f:selectItem itemValue="Swaziland" itemLabel="Swaziland" />
+				<f:selectItem itemValue="Tunisia" itemLabel="Tunisia" />
+				<f:selectItem itemValue="Turkey" itemLabel="Turkey" />
+				<f:selectItem itemValue="Uganda" itemLabel="Uganda" />
+				<f:selectItem itemValue="United Kingdom" itemLabel="United Kingdom" />
+				<f:selectItem itemValue="United States" itemLabel="United States" />
+				<f:selectItem itemValue="Uruguay" itemLabel="Uruguay" />
+				<f:selectItem itemValue="Yemen" itemLabel="Yemen" />
+				<f:selectItem itemValue="Zambia" itemLabel="Zambia" />
+				<f:selectItem itemValue="Zimbabwe" itemLabel="Zimbabwe" />
+				
+				
+			</h:selectOneMenu>
+
+			<h:outputLabel value="Account Number : " />
+			<h:inputText value="#{transactioncontroller.transaction.accountNumber}"></h:inputText>
+			<h:outputLabel value="Amount : " />
+			<h:inputText value="#{transactioncontroller.transaction.amount}"></h:inputText>
+			<h:outputLabel value="Transaction Code : " />
+		</h:panelGrid>
+		<h:commandButton value="submit"
+			action="#{TransactionController.addTransaction}"></h:commandButton>
+	</h:form>
+</h:body>
+</html>

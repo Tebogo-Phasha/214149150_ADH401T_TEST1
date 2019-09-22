@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"      
+      xmlns:h="http://java.sun.com/jsf/html">
+	
+<h:head>
+	<title>DigiBank</title>
+</h:head>
+<h:body>
+	<h2>Please Capture Transactions Below</h2>
+	<h:form>
+		<h:panelGrid columns="2">
+			<h:outputLabel value="Name : " />
+			<h:inputText value="#{transactioncontroller.transaction.customerName}"></h:inputText>
+			<h:outputLabel value="Source Passport : " />
+			<h:inputText value="#{employeecontroller.employee.surName}"></h:inputText>
+			<h:outputLabel value="Destination Bankt : " />
+			<h:inputText value="#{employeecontroller.employee.surName}"></h:inputText>
+
+			<h:outputLabel value="Destination Country : " />
+			<h:selectOneMenu value="#{user.city}">
+				<f:selectItem itemValue="Kozani" itemLabel="City - Kozani" />
+				<f:selectItem itemValue="Kavala" itemLabel="City - Kavala" />
+				<f:selectItem itemValue="Thessaloniki"itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+				<f:selectItem itemValue="Thessaloniki"
+					itemLabel="City - Thessaloniki" />
+			</h:selectOneMenu>
+
+			<h:outputLabel value="Account Number : " />
+			<h:inputText value="#{employeecontroller.employee.surName}"></h:inputText>
+			<h:outputLabel value="Amount : " />
+			<h:inputText value="#{employeecontroller.employee.surName}"></h:inputText>
+			<h:outputLabel value="Transaction Code : " />
+		</h:panelGrid>
+		<h:commandButton value="submit"
+			action="#{TransactionController.addTransaction}"></h:commandButton>
+	</h:form>
+</h:body>
+</html>

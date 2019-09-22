@@ -1,0 +1,28 @@
+package service;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Singleton;
+//import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import model.TransactionEntity;
+
+
+//@Stateless
+@Singleton
+@LocalBean
+public class TransactionEJB {
+
+	@PersistenceContext
+	private EntityManager em;
+    public TransactionEJB() {
+        // TODO Auto-generated constructor stub
+    }
+    
+    public void addNew(TransactionEntity transactionEntity) {
+    	
+    	em.persist(transactionEntity);
+    }
+
+}
